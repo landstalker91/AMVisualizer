@@ -36,10 +36,11 @@
     <div id="mynetwork">
         <div class="vis-network" tabindex="900" style="position: relative; overflow: hidden; touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;">
             <canvas width="900" height="600" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"></canvas>
-            <div class="vis-manipulation" style="display: none;"></div><div class="vis-edit-mode" style="display: block;">
-                <div class="vis-button vis-edit vis-edit-mode" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                    <div class="vis-label">Edit</div>
-                </div>
+            <div class="vis-manipulation" style="display: none;"></div>
+            <div class="vis-edit-mode" style="display: block;">
+            <div class="vis-button vis-edit vis-edit-mode" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+            <div class="vis-label">Edit</div>
+            </div>
             </div>
             <div class="vis-close" style="display: none;"></div>
             <div class="vis-tooltip" style="left: 0px; top: 0px; visibility: hidden;">I have a popup!</div>
@@ -89,9 +90,10 @@
         // create an array with edges
         var edges = new vis.DataSet([
             { from: 1, to: 3, length: EDGE_LENGTH_MAIN },
-            { from: 1, to: 2, length: EDGE_LENGTH_MAIN },
+            { from: @ViewBag.Data[0], to: @ViewBag.Data[1], length: EDGE_LENGTH_MAIN },
             { from: 2, to: 4, length: EDGE_LENGTH_MAIN },
-            { from: 2, to: 5, length: EDGE_LENGTH_MAIN }
+            { from: 2, to: 5, length: EDGE_LENGTH_MAIN },
+            { from: 3, to: 4, length: EDGE_LENGTH_MAIN }
         ]);
 
         // create a network

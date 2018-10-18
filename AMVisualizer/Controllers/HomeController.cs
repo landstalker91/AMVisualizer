@@ -17,6 +17,7 @@ namespace AMVisualizer.Controllers
 
         public IActionResult Graph()
         {
+            ViewBag.Data = new int[] { 1,2 };
             return View();
         }
 
