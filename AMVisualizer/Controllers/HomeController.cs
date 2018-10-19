@@ -26,6 +26,17 @@ namespace AMVisualizer.Controllers
             return View();
         }
 
+        public IActionResult Test()
+        {
+            ViewBag.Data = new int[] { 1, 2 };
+            return View();
+        }
+
+        public IActionResult TestLine()
+        {
+            return View();
+        }
+
         public IActionResult Graph3()
         {
             return View();
