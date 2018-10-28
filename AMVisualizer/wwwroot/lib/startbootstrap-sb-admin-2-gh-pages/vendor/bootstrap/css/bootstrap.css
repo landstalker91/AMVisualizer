@@ -5462,7 +5462,7 @@ button.list-group-item-danger.active:focus {
 
 .panel-body-inline {
     width: 100%;
-    height: 100%;
+    height: 500px;
     border: 1px solid lightgray;
     display: inline-block;
 }

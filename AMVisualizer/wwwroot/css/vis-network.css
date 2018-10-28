@@ -1,0 +1,34 @@
+﻿body {
+    font: 10pt sans;
+    background-color: beige;
+}
+
+.panel-inline {
+    width: 100%;
+    height: 90%;
+}
+
+.inline-element {
+    height: 100%;
+    top: 10%;
+    display: inline-block;
+    float: left;
+}
+
+#ig_infopanel {
+    height: 100%;
+    margin: 10px;
+    background-color: oldlace;
+}
+
+#ig_canvas {
+    height: 100%;
+    margin: 10px;
+    background-color: oldlace;
+}
+
+#mynetwork {
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+}

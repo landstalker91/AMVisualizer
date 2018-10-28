@@ -32,6 +32,12 @@ namespace AMVisualizer.Controllers
             return View();
         }
 
+        public IActionResult TestNew()
+        {
+            ViewBag.Data = new int[] { 1, 2 };
+            return View();
+        }
+
         public IActionResult TestLine()
         {
             return View();
